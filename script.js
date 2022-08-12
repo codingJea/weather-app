@@ -13,8 +13,9 @@ window.addEventListener("load", function () {
 
         try {
             getWeather(input);
-            form.reset();
+            // form.reset();
         } catch (error) {
+            // document.querySelector(".city").innerText = error.message;
             console.log(`Error Message: ${error.message}`);
         }
     });

@@ -19,11 +19,22 @@ function convertToFahr(temp) {
 }
 */
 
-async function getWeather(zipcode){
-    apiWeather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=metric&appid=${key}`;
-    const weatherResponse = await fetch (apiWeather);
-    const weatherDetails = await weatherResponse.json();
-    displayWeather(weatherDetails);
+async function getWeather(zipcode) {
+    try {
+        apiWeather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=metric&appid=${key}`;
+
+        const weatherResponse = await fetch(apiWeather);
+        const weatherDetails = await weatherResponse.json();
+        const { message } = weatherDetails;
+        if (message !== 'undefined' && message == 'city not found') {
+            alert(`City not found. Please enter another zip code.`);
+            document.querySelector("form").reset();
+        } else {
+            displayWeather(weatherDetails);
+        }
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 async function displayWeather(data) {
