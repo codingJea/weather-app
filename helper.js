@@ -1,4 +1,4 @@
-const apiKey = "f423b544ccb360d9ad3811e6cc03b002";
+const key = "f423b544ccb360d9ad3811e6cc03b002";
 
 function convertToFahr(temp) {
     return Math.round(((temp * (9 / 5)) + 32));
@@ -20,7 +20,7 @@ function convertToFahr(temp) {
 */
 
 async function getWeather(zipcode){
-    apiWeather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=metric&appid=${apiKey}`;
+    apiWeather = `https://api.openweathermap.org/data/2.5/weather?zip=${zipcode}&units=metric&appid=${key}`;
     const weatherResponse = await fetch (apiWeather);
     const weatherDetails = await weatherResponse.json();
     displayWeather(weatherDetails);
