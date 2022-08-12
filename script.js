@@ -1,3 +1,5 @@
+// Weather App
+
 window.addEventListener("load", function () {
     // Load default weather using my favorite zip code
     getWeather("08854");

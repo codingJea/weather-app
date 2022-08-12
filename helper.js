@@ -40,5 +40,4 @@ async function displayWeather(data) {
     document.querySelector(".wind").innerText = `Wind speed: ${wind.speed} km/h`;
     document.querySelector(".weather").classList.remove("loading");
     document.body.style.backgroundImage = `url("https://source.unsplash.com/1600x900/?${description}")`;
-
 }
