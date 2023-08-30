@@ -15,7 +15,7 @@ Welcome to the Weather App! This is a web application that allows you to check t
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/weather-app.git`
+1. Clone the repository: `git clone https://github.com/jeaparker/weather-app.git`
 2. Navigate to the project directory: `cd weather-app`
 3. Install dependencies: `npm install`
 
