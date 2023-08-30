@@ -3,15 +3,22 @@
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
+![Website Preview](/weather-app-preview.png)
+
 Welcome to the Weather App! This is a web application that allows you to check the current weather for any entered zip code.
 
 ## Table of Contents
 
+- [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Key](#api-key)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Demo
+
+You can experience a live demo of the website [here](https://jeaparker.github.io/weather-app/).
 
 ## Installation
 
